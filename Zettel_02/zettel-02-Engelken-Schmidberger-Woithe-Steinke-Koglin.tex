@@ -6,17 +6,46 @@
 
 \usepackage{hci}
 
+
 \begin{document}
 % Seitenkopf mit Informationen
 \kopf
 \renewcommand{\figurename}{Figure}
 
 \aufgabe{3 \textit{(Team-Aufgabe)}} 
+Wir nehmen an, dass eine Person eine Option definitiv genau einer Gruppe zuordnen kann, egal ob die Person naiv oder erfahren ist.
 \begin{enumerate}
 	\item \textit{Welche Menüanordnung minimiert die Auswahlzeiten für naive Benutzer?}\\
-		todo
+		Wir betrachten zunächst nur die symmetrischen Fälle:
+		\begin{enumerate}
+			\item 1 Gruppe, 6 Optionen (bzw. flaches Menü)
+			\[T_{n(1,6)} = b \cdot 6 = 6b\]
+			\item 2 Gruppen, 3 Optionen
+			\[T_{n(2,3)} = b \cdot 2 + b \cdot 3 = 5b\]
+			\item 3 Gruppen, 2 Optionen
+			\[T_{n(3,2)} = b \cdot 3 + b \cdot 2 = 5b\]
+		\end{enumerate}
+		
+		Betrachten wir nun eine Menüanordnung mit $n$ Ebenen und sei $O_i$ die größte Anzahl der Optionen/Gruppen im $i$ten Menülevel.
+		Dann gibt es keine weitere Menüanordnung für die gilt \[O_1 + ... + O_n \leq 5\]
+		%Hier müsste man wahrscheinlich noch genauer darauf eingehen, warum das so ist%
+		Also minimieren die Anordnungen \( (ii) \) und \( (iii) \) die Auswahlzeit für den naiven Benutzer.
 	\item \textit{Welche Menüanordnung minimiert die Auswahlzeiten für erfahrene Benutzer?}\\
-		todo
+		Wir betrachten zunächst nur die symmetrischen Fälle:
+		\begin{enumerate}
+			\item 1 Gruppe, 6 Optionen (bzw. flaches Menü)
+			\[T_{e(1,6)} = b \cdot \log_2{(6+1)} = b \cdot \log_2{7}\]
+			\item 2 Gruppen, 3 Optionen
+			\[T_{e(2,3)} = b \cdot \log_2{(2+1)} + b \cdot \log_2{(3+1)} = b \log_2{(3\cdot4)} = b \cdot \log_2{12}\]
+			\item 3 Gruppen, 2 Optionen
+			\[T_{e(3,2)} = b \cdot \log_2{(3+1)} + b \cdot \log_2{(2+1)} = b \log_2{(4\cdot3)} = b \cdot \log_2{12}\]
+		\end{enumerate}
+		Betrachten wir nun eine Menüanordnung mit $n$ Ebenen und sei $O_i$ die größte Anzahl der Optionen/Gruppen im $i$ten Menülevel.
+		Dann gibt es keine weitere Menüanordnung für die gilt \[(O_1+1) \cdot ... \cdot (O_n + 1) \leq 7\]
+		%Hier müsste man wahrscheinlich noch genauer darauf eingehen, warum das so ist%
+		Deshalb und weil der Logarithmus streng monoton wächst, minimiert die die Menüanordnung \( (i) \) die Auswahlzeit für den erfahrenen Benutzer. 
 \end{enumerate}
+
+
 
 \end{document}
