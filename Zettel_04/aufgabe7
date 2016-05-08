@@ -1,0 +1,18 @@
+Anforderungen
+	Buch Ausleihe/Rückgabe
+	Benutzer Hinzufügen/Löschen
+	Buch Hinzufügen/Löschen
+	Suchen	
+	Tastenkürzel
+
+Designfehler in Aufgabe 7
+	Nutzer hinzufügen
+		Name aufteilen in Name/Vorname
+		Adresse aufteilen in Straße/PLZ/Ort
+		Daten als Datumsfeld
+		Geschlecht als Radiobuttons
+
+	Buch hinzufügen	
+		Verleihstatus/Entleiher macht kein Sinn bei Neuaufnahme
+		Schlagworte als Multiselektion
+		Möglich ein Buch als Präsenzexemplar hinzuzufügen
