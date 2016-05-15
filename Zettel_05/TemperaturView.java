@@ -49,11 +49,6 @@ public class TemperaturView implements Observer{
 		_temperatureFTf.setText(Integer.toString(INITIALFAHRENHEIT));
 		_temperatureCTf.setText(Integer.toString(INITIALCELSIUS));
 		
-		
-		//kann man noch anpassen, dann muss aber noch einiges hinzugefügt werden
-		//_temperatureFTf.setEditable(false);
-		//_temperatureCTf.setEditable(false);
-		
 		temperaturModel.setCelsius(INITIALCELSIUS);
 		temperaturModel.setFahrenheit(INITIALFAHRENHEIT);
 		
