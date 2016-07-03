@@ -1,0 +1,48 @@
+\documentclass[a4paper,10pt]{article}
+
+% Hier die Nummer des Blatts und Autoren angeben.
+\newcommand{\blatt}{11}
+\newcommand{\autor}{Ralf Engelken, Joachim Schmidberger, Frank Woithe, Michael Steinke, Merlin Koglin}
+
+\usepackage{hci}
+\usepackage{float} 
+
+\begin{document}
+% Seitenkopf mit Informationen
+\kopf
+\renewcommand{\figurename}{Figure}
+
+\aufgabe{16 \textit{(Team-Aufgabe)}} 
+Interview
+
+\begin{enumerate}
+\item{Login-Seite}
+
+Analyse:
+-Es gibt nacheinander 2 Login-Screens (Uni auswählen/ Benutzerlogin) von verschiedenen Servern Besser: 1 Login-Screen
+
+-Login Seite 1:
+-Die Informationen für UHH und Hamburger FH sind vermischt. Besser : Trennen
+-Andere Informationen sind unübersichtlich angeordnet
+-Untermenü: Es gibt keinen Menüpunkt für den Login. Wenn man einen Menüpunkt anwählt, kommt man nicht zur Login-Seite zurück.
+-Nur weiterleitung zu Login-Seiten. Besser: direkter Login
+
+-Login Seite 2:
+-Umleitung auf RRZ-Seite mit anderem Design
+-viele unnötige Informationen (wozu Single-Signon wenn man es nur für OLAT nutzen kann?)
+Besser: Seite durch direkt-Login auf der ersten Seite ersetzen
+
+
+
+\item{Willkommes-Seite}
+
+Analyse:
+-3 Menüebenen (horizontale Uni-Haupt-Menüleiste, vertikale Untermenüleiste, dann in Tabs aufgeteilte Seiten)
+ Die Struktur ist sehr unübersichtlich, es ist schwierig sich zu orientieren. Besser: Tabs in Untermenü integrieren
+
+-konfigurierbares Dashboard. Man kann Informationsfenster ein- oder ausblenden und in einem Grid mit 2 Spalten und dynamischer Zeilenzahl anordnen.
+ Man kann die Größe der Fenster allerdings nicht beeinflussen. Manche sind fast leer, in andere passen nicht alle Informationen hinein.
+ 
+-kritischer Fehler: Logout funktioniert nicht! Beim Logout werden die Session Cookies auf dem Server anscheinend nicht gelöscht, man kann sich nur dann nicht    mehr einloggen, wenn man die Cookies im Browser löscht!
+\end{enumerate}
+\end{document}
