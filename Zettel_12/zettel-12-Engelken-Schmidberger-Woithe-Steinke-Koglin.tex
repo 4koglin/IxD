@@ -86,11 +86,37 @@ Stefan Schmidt
 
 \newpage
 \item Implementierung
+Für die Bedienung wurde das "Hub and Spoke"-Pattern gewählt. Vom Hauptmenü aus können voneinander unabhängige Untermenüs erreicht werden. Im Prototypen wurde das Hauptmenü durch eine scrollbare Menuleiste realisiert. So kann man die App leicht erweitern, wenn im Smart Home weitere steuerbare Elemente hinzukommen.
 
+Wenn man im Hauptmenü den Menüpunkt Kaffemaschine auswählt, kommt man auf die Auswahlseite für die Zeit. Dort kann man die Zeit einstellen, zu der der Kaffee aufgebrüht werden soll. Man kann die Zeit einstellen und die Programmierung per Start abschließen oder per Cancel abbrechen und ins Hauptmenü zurückkehren. Per default wird das aktuelle Datum gesetzt, per Swipe kommt man zum Datums-Menü, in dem man das Ziel-Datum ändern kann, und zu den Optionen, in denen man den kaffee konfigurieren kann. Von jedem Punkt des Swipe-Menüs kann man die Programmierung beenden oder abbrechen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Screenshot-Hauptmenü.png} 
+	\caption{Prototyp: Hauptmenü}
+	\label{fig3}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Screenshot-AuswahlZeit.png} 
+	\caption{Prototyp: Auswahl der Zielzeit}
+	\label{fig4}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Screenshot-AuswahlDatum.png} 
+	\caption{Prototyp: Auswahl des Zieldatums}
+	\label{fig5}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Screenshot-AuswahlOptionen.png} 
+	\caption{Prototyp: zusätzliche Optionen}
+	\label{fig5}
+\end{figure}
 
-
-\newpage
+\newline
 \item Evaluation
+Wir konnten die Mixersteuerung leider nicht testen, da wir keine Gremlins auftreiben konnten. Wir sind jedoch sicher, daß die Fernsteuerung eine signifikante Verbesserung darstellt, da die Anwesenheit in der Küche beim Starten des Mixers etreme gesundheitliche Riskien mit sich bringt.
 
 \end{enumerate}
 \end{document}
